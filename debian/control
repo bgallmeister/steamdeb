@@ -1,0 +1,15 @@
+Source: h2osteam
+Section: unknown
+Priority: optional
+Maintainer: H2O.ai <bill@h2o.ai>
+Build-Depends: debhelper (>=9), golang, node.js
+Standards-Version: 3.9.6
+Homepage: https://github.com/h2oai/steam
+#Vcs-Git: git://anonscm.debian.org/collab-maint/h2osteam.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/h2osteam.git
+
+Package: h2osteam
+Architecture: all
+Depends: ${misc:Depends}, haproxy 
+Description: <insert up to 60 chars description>
+Steam is a platform that streamlines the process of building and deploying predictive applications.
