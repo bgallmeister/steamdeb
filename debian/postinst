@@ -1,9 +1,11 @@
 #!/bin/sh
-# postinst script for h2osteam
+# postinst script for steam
 #
 # see: dh_installdeb(1)
 
 set -e
+USERNAME=steam
+GROUPNAME=steam
 
 # summary of how this script can be called:
 #        * <postinst> `configure' <most-recently-configured-version>
@@ -17,6 +19,15 @@ set -e
 # for details, see https://www.debian.org/doc/debian-policy/ or
 # the debian-policy package
 
+# add steam user/group if needed.
+if ! getent group $GROUPNAME >/dev/null; then
+	addgroup --system $GROUPNAME
+fi
+if ! getent passwd $USERNAME >/dev/null; then
+	adduser --system --ingroup $GROUPNAME \
+		--home /opt/h2oai --no-create-home \
+		$USERNAME
+fi
 
 case "$1" in
     configure)

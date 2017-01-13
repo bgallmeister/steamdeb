@@ -1,10 +1,10 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: h2osteam
-Source: <https://github.com/h2oai/steam>
+Upstream-Name: steam
+Source: https://github.com/h2oai/steam
 
-Files: debian/*
-Copyright: 2017 H2O.ai <bill@h2o.ai>
-License: AGPL-v3
+Files: *
+Copyright: 2017 h2o.ai <steam@h2o.ai>
+License: AGPL-3
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU Affero General Public License as published by
  the Free Software Foundation; either version 3 of the License, or
@@ -17,10 +17,6 @@ License: AGPL-v3
  .
  You should have received a copy of the GNU Affero General Public License
  along with this program. If not, see <https://www.gnu.org/licenses/>
- .
- Commercial licenses for the binary product are also available; contact h2o.ai
- if you are interested.
-
 
 # Please also look if there are files or directories which have a
 # different copyright/license attached and list them here.
